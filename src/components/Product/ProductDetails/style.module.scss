@@ -1,0 +1,81 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.details {
+    font-family: 'Gilroy';
+    padding: 0px 132px 35px 212.5px;
+    position: relative;
+    height: 573.5px;
+
+    &__closeBtn{
+        font-family: 'Gilroy';
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        right: 33px;
+        top: 33px;
+
+    }
+    &__body {
+        width: 500px;
+        margin-left: 30px;
+
+        p {
+            font-family: 'Din Pro';
+            font-size: $fz-md;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            padding: 70px 0 120px 0;
+        }
+
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 5%;
+            &__btn {
+
+                @include flexCenter;
+                border: none;
+                background-color: transparent;
+                &.prevBtn {
+                }
+                &.nextBtn {
+                    transform: rotate(180deg);
+                }
+            }
+            &__indicator {
+                width: 11px;
+                height: 11px;
+                border: 2px solid black;
+                border-radius: 50%;
+                &--active{
+                    background-color: #ff6a9f;
+                    border: 2px solid #ff6a9f;
+                }
+            }
+        }
+    }
+
+    &__list {
+
+        .listItem {
+            font-family: 'Din Pro';
+            letter-spacing: 0.5px;
+            position: relative;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            &__number {
+                font-family: 'Gilroy';
+                font-weight: 800;
+                color: #8cc9e8;
+                letter-spacing: 2px;
+            }
+        }
+        padding-bottom: 61.5px;
+    }
+}

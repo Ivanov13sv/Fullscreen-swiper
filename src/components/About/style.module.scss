@@ -1,0 +1,120 @@
+@import 'styles/variables';
+
+.about {
+    background: url('../../assets/img/about/bg.jpg') 0 / 108% auto no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    &__main-block {
+        margin-top: -10px;
+        padding: 10px 35px;
+        position: relative;
+        z-index: 1;
+        height: 445px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        text-align: left;
+        direction: rtl;
+        &::-webkit-scrollbar,
+        &::-webkit-scrollbar-thumb,
+        &::-webkit-scrollbar-track {
+            width: 25px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-image: url('../../assets/img/scrollbar-thumb.png');
+            background-repeat: repeat-y;
+            background-size: contain;
+            background-position: 50%;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-image: url('../../assets/img/scrollbar.png');
+            background-repeat: repeat-y;
+            background-position: 50%;
+            background-size: contain;
+        }
+    }
+
+    .main-block {
+        &__text {
+            padding: 25px 30px;
+            border-radius: $borderRadius;
+            background-color: white;
+            font-family: 'DIN Pro';
+            letter-spacing: 0.16px;
+            line-height: 1.364;
+            font-size: $fz-md;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__title {
+        font-size: $fz-md;
+        max-width: 100px;
+        margin-top: -27px;
+        padding-bottom: 45px;
+    }
+
+    &__bg-img {
+        position: absolute;
+
+        &.pink-sperm {
+            top: 100px;
+            right: 0;
+            
+            &.active{
+                animation: appearance 1.5s linear;
+            }
+        }
+        &.pink-sperm2 {
+            top: 90px;
+            filter: blur(1px);
+            right: 0;
+            &.active{
+                animation: appearance 2s  linear;
+            }
+        }
+        &.pink-sperm3 {
+            top: 50px;
+            filter: blur(1px);
+            right: 0;
+            &.active{
+                animation: appearance 2.7s  linear;
+            }
+        }
+        &.pink-sperm4 {
+            bottom: 94px;
+            right: -20%;
+            filter: blur(1px);
+            &.active{
+                animation: appearance 2s  linear;
+            }
+        }
+        &.pink-sperm5 {
+            z-index: 2;
+            bottom: 40px;
+            width: 700px;
+            right: -52%;
+            &.active{
+                animation: appearance 2s linear;
+            }
+        }
+    }
+
+
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+        transform: translate(200px,200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}

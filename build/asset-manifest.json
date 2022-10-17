@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4b6bfae.css",
+    "main.js": "/static/js/main.15e58459.js",
+    "static/media/bg.jpg": "/static/media/bg.55c8cd323aa52e3556dd.jpg",
+    "static/media/bottle.png": "/static/media/bottle.49c91dfc80934ce7001e.png",
+    "static/media/DINPro.ttf": "/static/media/DINPro.1b0768c360d049fff810.ttf",
+    "static/media/Gilroy-Light.ttf": "/static/media/Gilroy-Light.0ac7c2f9cb59ea1ba11c.ttf",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "static/media/bigPinkSperm.png": "/static/media/bigPinkSperm.ae885b57dbfaa8ecd93d.png",
+    "static/media/Gilroy-Extrabold.ttf": "/static/media/Gilroy-Extrabold.92e435f7fae6070d73bb.ttf",
+    "static/media/DINPro.woff": "/static/media/DINPro.1871e3d59b6b24eb537d.woff",
+    "static/media/pink_sperm.png": "/static/media/pink_sperm.557873471833e637fc70.png",
+    "static/media/big_bacterium.png": "/static/media/big_bacterium.227fbe6d112edf51f12d.png",
+    "static/media/pink-sperm2.png": "/static/media/pink-sperm2.b4c3dcf93132cd470eaf.png",
+    "static/media/Gilroy-Light.woff": "/static/media/Gilroy-Light.368f09f56e89b3fe11c7.woff",
+    "static/media/Gilroy-Regular.woff": "/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/Gilroy-Extrabold.woff": "/static/media/Gilroy-Extrabold.f39ff81c45c126012265.woff",
+    "static/media/DINPro.woff2": "/static/media/DINPro.560be2f6f935581d7d62.woff2",
+    "static/media/blue_bubble1.png": "/static/media/blue_bubble1.b7212f1a85553691ef25.png",
+    "static/media/Gilroy-Light.woff2": "/static/media/Gilroy-Light.c2e7a6dc47e5b9a89a37.woff2",
+    "static/media/Gilroy-Regular.woff2": "/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "static/media/Gilroy-Extrabold.woff2": "/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
+    "static/media/pink-sperm3.png": "/static/media/pink-sperm3.8b34c9e0f6d85e70d95c.png",
+    "static/media/prickly_bacterium.png": "/static/media/prickly_bacterium.193fadab504f7c0623a6.png",
+    "static/media/blurred_pink_sperm.png": "/static/media/blurred_pink_sperm.1c9f06cf8368dddc5d09.png",
+    "static/media/rod_bacterium.png": "/static/media/rod_bacterium.4e5e9b4b02e4c15e0727.png",
+    "static/media/pink_bubble.png": "/static/media/pink_bubble.dff7db99b1d267ab758d.png",
+    "static/media/blurred_bacterium2.png": "/static/media/blurred_bacterium2.89b82f0114eab8b086d5.png",
+    "static/media/smooth_bacterium2.png": "/static/media/smooth_bacterium2.d8f5731e30e3131410a5.png",
+    "static/media/smooth_bacterium.png": "/static/media/smooth_bacterium.fbbaf4052f420af21a2f.png",
+    "static/media/blurred_bacterium.png": "/static/media/blurred_bacterium.175fafc5b6b9f85ff286.png",
+    "index.html": "/index.html",
+    "main.e4b6bfae.css.map": "/static/css/main.e4b6bfae.css.map",
+    "main.15e58459.js.map": "/static/js/main.15e58459.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4b6bfae.css",
+    "static/js/main.15e58459.js"
+  ]
+}

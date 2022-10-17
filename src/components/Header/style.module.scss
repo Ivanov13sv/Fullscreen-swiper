@@ -1,0 +1,32 @@
+.header {
+    position: fixed;
+    top: 25px;
+    left: 70px;
+    z-index: 5;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.home img {
+    width: 21.5px; 
+    height: 19.5px;
+}
+
+.home img:hover{
+    transform: scale(1.1);
+}
+
+.divider{
+    width: 1px;
+    background-color: black;
+    height: 25px;
+}
+
+.navTitle{
+    letter-spacing: 4px;
+}

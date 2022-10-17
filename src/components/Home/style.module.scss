@@ -1,0 +1,121 @@
+@import 'styles/variables';
+
+.home {
+    background: url('../../assets/img/home/bg.jpg') bottom right/ 110% auto
+        no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    &__hello {
+        display: inline-block;
+        font-family: 'DIN Pro';
+        letter-spacing: 0.96px;
+        font-size: $fz-md;
+        padding-bottom: 10px;
+    }
+
+    &__main-message {
+        position: relative;
+        z-index: 0;
+        font-size: 109px;
+        line-height: 1.073;
+        font-family: 'Gilroy';
+        font-weight: 300;
+        letter-spacing: 2px;
+        display: inline-block;
+        span {
+            font-weight: 800;
+        }
+    }
+    &__next-slide-btn {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 53px;
+    }
+
+    &__bg-img {
+        position: absolute;
+        &.pink_sperm {
+            top: 160px;
+            right: 10px;
+        }
+        &.blurred_pink_sperm {
+            left: 0;
+            bottom: 50px;
+        }
+        &.rod_bacterium {
+            top: 72.5px;
+            left: 0;
+        }
+        &.blurred_bacterium {
+            top: 30px;
+            right: 30px;
+        }
+        &.big_bacterium {
+            bottom: 0;
+            right: 255px;
+            animation: bigBac 10s infinite linear;
+        }
+        &.smooth_bacterium {
+            right: 217px;
+            top: 61.5px;
+            animation: smoothBac 10s infinite linear;
+        }
+        &.smooth_bacterium2 {
+            z-index: 0;
+            left: 23.5px;
+            bottom: 193.5px;
+            animation: smoothBac2 5s infinite linear alternate;
+        }
+        &.blurred_bacterium2 {
+            left: 335px;
+            bottom: 59.5px;
+        }
+        &.prickly_bacterium {
+            right: 50.5px;
+            top: 200.5px;
+            transition: transform 3s;
+            animation: prickly_bacterium 15s linear infinite alternate;
+        }
+    }
+}
+
+
+@keyframes prickly_bacterium {
+    100% {
+        transform: translate(-40px, -30px) scale(1.3) rotate(360deg);
+    }
+
+}
+
+@keyframes bigBac {
+    25% {
+        transform: scale(1.2);
+    }
+
+    40% {
+        transform: translate(-2rem, -1rem) scale(1.25);
+    }
+
+    75% {
+        transform: translate(-4rem, 1.5rem) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes smoothBac2 {
+    100% {
+        transform: translate(2rem, 2rem) scale(1.2);
+    }
+}
+@keyframes smoothBac {
+    50% {
+        transform: translate(3rem, 1rem) scale(1.1);
+    }
+}

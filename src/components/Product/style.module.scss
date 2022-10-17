@@ -1,0 +1,239 @@
+@import 'styles/variables';
+
+.product {
+    background: url('../../assets/img/product/bg.jpg') 0 0/ 100% auto no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding: 168px 0 0 353px;
+    &__mainBlock {
+        font-family: 'Gilroy';
+        max-width: 626px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        p {
+            padding-left: 5px;
+            font-family: 'Din Pro';
+            font-size: $fz-md;
+            line-height: 1.2;
+            letter-spacing: 2px;
+        }
+        h2 {
+            position: relative;
+            z-index: 12;
+            font-weight: 400;
+            font-size: 90px;
+            letter-spacing: 15px;
+            span {
+                font-weight: 800;
+            }
+            padding-bottom: 60px;
+        }
+    }
+
+    .grid {
+        margin-left: -115px;
+        font-family: 'Din Pro';
+        font-size: 25px;
+        display: grid;
+        grid-template-areas:
+            'b b a'
+            'b b button';
+        gap: 38px;
+        .grid1 {
+            position: relative;
+            padding: 40px 40px 40px 126.5px;
+            grid-area: b;
+            width: 422px;
+            height: 265px;
+            background-color: white;
+            border-radius: $borderRadius;
+            box-shadow: 5.446px 8.387px 100.5px 17.5px rgba(157, 185, 198, 0.39);
+            img {
+                position: absolute;
+                top: 0;
+                transform: translateY(-50%);
+                left: 126.5px;
+            }
+        }
+        .grid2 {
+            position: relative;
+            padding: 43px;
+            grid-area: a;
+            width: 263px;
+            height: 150px;
+            background-color: white;
+            border-radius: $borderRadius;
+            box-shadow: 5.446px 8.387px 100.5px 17.5px rgba(157, 185, 198, 0.39);
+            img {
+                position: absolute;
+                top: 0;
+                left: 40px;
+                transform: translateY(-50%);
+            }
+        }
+
+        &:last-child {
+            grid-area: button;
+        }
+    }
+
+    &__bg-img {
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 10;
+        &.bottle {
+            z-index: 11;
+            left: 50px;
+            bottom: 0;
+        }
+        &.blue-bubble1 {
+
+            bottom: -10%;
+            animation: blue-bubble1 12s 2s linear alternate infinite;
+            width: 142px;
+            height: 142px;
+            background-image: url('../../assets/img/product/blue_bubble1.png');
+        }
+        &.blue-bubble2 {
+            z-index: 10;
+            bottom: 117px;
+            left: 250px;
+            width: 60px;
+            height: 60px;
+            background-image: url('../../assets/img/product/blue_bubble1.png');
+            animation: blue-bubble2 6s linear alternate infinite;
+        }
+        &.blue-bubble3 {
+            bottom: 282px;
+            left: 10px;
+            width: 33px;
+            height: 33px;
+            background-image: url('../../assets/img/product/blue_bubble1.png');
+            animation: blue-bubble3 5s linear alternate infinite;
+        }
+        &.blue-bubble4 {
+            z-index: 11;
+            top: 156px;
+            left: 185px;
+            width: 68px;
+            height: 68px;
+            background-image: url('../../assets/img/product/blue_bubble1.png');
+            animation: blue-bubble4 6s linear alternate infinite;
+        }
+        &.blue-bubble5 {
+            z-index: 11;
+            top: 65px;
+            left: 200px;
+            width: 37px;
+            height: 37px;
+            background-image: url('../../assets/img/product/blue_bubble1.png');
+            animation: blue-bubble5 6s linear alternate infinite;
+        }
+        &.pink-bubble {
+            bottom: 340px;
+            left: 188px;
+            width: 112px;
+            height: 112px;
+            background-image: url('../../assets/img/product/pink_bubble.png');
+            animation: pink-bubble 8s linear alternate infinite;
+        }
+        &.pink-bubble2 {
+            z-index: 11;
+            width: 75px;
+            height: 75px;
+            bottom: 140px;
+            left: 25px;
+            transform: rotate(60deg);
+            background-image: url('../../assets/img/product/pink_bubble.png');
+            animation: pink-bubble2 8s linear alternate infinite;
+        }
+        &.red-bubble {
+            top: 213px;
+            left: 77px;
+            background-image: url('../../assets/img/product/red_bubble.png');
+            width: 35px;
+            height: 35px;
+            animation: red-bubble 6s linear alternate infinite;
+        }
+    }
+}
+
+@keyframes pink-bubble2 {
+    50% {
+        transform: translate(70px, -20px) scale(1.3);
+    }
+
+    100% {
+        transform: translate(30px, 30px) scale(1);
+    }
+}
+
+@keyframes blue-bubble1 {
+    50% {
+        transform: translate(70px, 0) scale(1.3);
+    }
+
+    100% {
+        transform: translate(30px, 0) scale(1);
+    }
+}
+
+@keyframes blue-bubble2 {
+    50% {
+        transform: translate(-20px, -10px) scale(1.2);
+    }
+
+    100% {
+        transform: translate(30px, 0) scale(1);
+    }
+}
+@keyframes blue-bubble3 {
+    50% {
+        transform: translate(-20px, 0);
+    }
+
+    100% {
+        transform: translate(30px, 30px);
+    }
+}
+@keyframes blue-bubble4 {
+    50% {
+        transform: translate(-10px, 30px);
+    }
+
+    100% {
+        transform: translate(30px, 0px);
+    }
+}
+@keyframes blue-bubble5 {
+    25% {
+        transform: translate(-10px, 30px);
+    }
+
+    100% {
+        transform: translate(40px, 10px);
+    }
+}
+@keyframes pink-bubble {
+    25% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: translate(40px, 10px);
+    }
+}
+@keyframes red-bubble {
+    25% {
+        transform: translate(10px, 10px);
+    }
+
+    100% {
+        transform: translate(-10px, 20px);
+    }
+}

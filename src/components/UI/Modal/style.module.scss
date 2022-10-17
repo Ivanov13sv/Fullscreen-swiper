@@ -1,0 +1,34 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    animation: appearance linear 0.5s;
+    @include flexCenter;
+    padding-left: 80px;
+}
+
+.modal {
+    background: white;
+    transition: 0.3s all;
+    opacity: 1;
+    animation: appearance linear 0.5s;
+    border-radius: $borderRadius;
+    position: relative;
+    z-index: 11;
+}
